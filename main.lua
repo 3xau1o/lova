@@ -2,10 +2,12 @@ local tl = require("tl")
 
 tl.loader()
 
+lick = require "lick"
+lick.reset = true
+
 require("script")
 
-string = say("hello")
-
 function love.draw()
+    string = say("hello")
     love.graphics.print(string, 400, 300)
 end

@@ -1,3 +1,3 @@
 global function say(text: string): string
-    return text + "world"
+    return text .. " world"
 end
