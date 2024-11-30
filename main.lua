@@ -5,9 +5,15 @@ tl.loader()
 lick = require "lick"
 lick.reset = true
 
-require("script")
+function love.load()
+    require("script")
+    require("luaue")
+end
 
 function love.draw()
-    string = say("hello")
-    love.graphics.print(string, 400, 300)
+    salute = say("hello")
+    love.graphics.print(salute, 400, 300)
+
+    salute = hello()
+    love.graphics.print(salute, 400, 400)
 end
